@@ -11,18 +11,22 @@
 		 
 		<header>
 			<nav>
+				<!--logo de la pagina -->
 				<div class="logo">
-					<img src="https://www.infolavelada.com/favicon.svg" 
+					<img src="https://www.infolavelada.com/favicon.svg" width="50" height="50"
 					alt="Logo" />
 				</div>
-				<a><b>Mi primera pagina</b></a>
-				<a href="/">inicio</a>
-				<a href="/juegos">juegos</a>
-				<a href="https://www.infolavelada.com">velada original</a>
-
+				<!--navegacion de la pagina -->
+				<ul>
+					<li><a><b>Mi primera pagina</b></a></li>
+					<li><a href="/">inicio</a></li>
+					<li><a href="/juegos">juegos</a></li>
+					<li><a href="https://www.infolavelada.com">velada original</a></li>
+				</ul>
+				<a href="/iniciar"> <button> iniciar sesion </button> </a>
 			</nav>
 		</header>
-		
+
 		<!--esta parte es donde se intercambian las vistas -->
 		<slot />
 		
