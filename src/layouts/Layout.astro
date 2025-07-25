@@ -8,20 +8,26 @@
 		<title>Mi primera pagina</title>
 	</head>
 	<body>
-		 
 		<header>
 			<nav>
 				<!--logo de la pagina -->
 				<div class="logo">
-					<img src="https://www.infolavelada.com/favicon.svg" width="50" height="50"
-					alt="Logo" />
+					<img
+						src="https://www.infolavelada.com/favicon.svg"
+						width="50"
+						height="50"
+						alt="Logo"
+					/>
 				</div>
 				<!--navegacion de la pagina -->
 				<ul>
 					<li><a><b>Mi primera pagina</b></a></li>
 					<li><a href="/">inicio</a></li>
 					<li><a href="/juegos">juegos</a></li>
-					<li><a href="https://www.infolavelada.com">velada original</a></li>
+					<li>
+						<a href="https://www.infolavelada.com"
+							>velada original</a>
+					</li>
 				</ul>
 				<a href="/iniciar"> <button> iniciar sesion </button> </a>
 			</nav>
@@ -29,11 +35,7 @@
 
 		<!--esta parte es donde se intercambian las vistas -->
 		<slot />
-		
-		<footer>
-			creditos a mi papa por patrocinarme el curso
-		</footer>
 
+		<footer>creditos a mi papa por patrocinarme el curso</footer>
 	</body>
 </html>
-
