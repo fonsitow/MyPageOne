@@ -1,22 +1,54 @@
 ---
 import Logo from "../assets/Logo.svg";
+import { Icon } from 'astro-icon/components'
 ---
 
 <header>
-    <nav>
+    <nav class="menu">
         <!--logo de la pagina -->
         <div class="logo">
-            <img src={Logo.src} width="50" height="50" alt="Logo" />
+            <Icon name="pixelarticons:4k" 
+            width="64" 
+            height="64" />
         </div>
         <!--navegacion de la pagina -->
-        <ul>
-            <li><a><b>Mi primera pagina</b></a></li>
+        <ul class="lista">
             <li><a href="/">inicio</a></li>
-            <li><a href="/juegos">juegos</a></li>
+            <li><a href="/juegos">participantes</a></li>
             <li>
                 <a href="https://www.infolavelada.com">velada original</a>
             </li>
         </ul>
-        <a href="/iniciar"> <button> iniciar sesion </button> </a>
+        <a href="/iniciar"> <button class="boton" > 
+            iniciar sesion 
+        <Icon name=mdi:user width="24" height="24"></Icon>
+    </button> </a>
     </nav>
 </header>
+
+<style>
+    .menu {
+        display: flex;
+        background-color: rgba(81, 0, 255, 0.429);
+        justify-content: space-between;
+        align-items: center;
+}
+    .lista {
+    display: flex;
+    list-style: square;
+    gap: 32px;
+    justify content: center;
+    align-items: center;
+}
+    .boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: linen;
+    border-radius: 8px;
+    padding: 8px 16px;  }
+
+
+</style>

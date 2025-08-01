@@ -1,4 +1,17 @@
- <h1>iniciar sesion</h1>
-    <p>Aqui seguire desarrollando mis habilidades y creando contenido interesante.</p>
-    <button>Iniciar Sesion</button>
-    <a href="/"> <button> volver </button> </a>
+---
+import { Icon } from "astro-icon/components";
+import '../styles/global.css';
+import BasicLayout from "../layouts/BasicLayout.astro";
+---
+<BasicLayout>
+<h1 class="titulo">iniciar sesion</h1>
+<Icon name='cif:ve' width="32" height="32" />
+<p>
+   Aqui seguire desarrollando mis habilidades y creando contenido interesante.
+</p>
+<button>
+   iniciar Sesion
+   <Icon name="mdi:user" width="24" height="24" />
+</button>
+<a href="/"> <button> volver </button> </a>
+</BasicLayout>
