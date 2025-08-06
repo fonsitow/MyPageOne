@@ -12,24 +12,26 @@ import Footer from "../components/Footer.astro";
          <Icon name="cif:ve" width="32" height="32" />
       </header>
 
-      <div class="entrada">
-         <label for="usuario">Usuario:</label>
-         <input
-            type="text"
-            id="usuario"
-            name="usuario"
-            placeholder="Ingrese su usuario"
-            required
-         />
-         <label for="contrasena">Contraseña:</label>
-         <input
-            type="password"
-            id="contrasena"
-            name="contrasena"
-            placeholder="Ingrese su contraseña"
-            required
-         />
-
+      <div class="container">
+         </div>
+         <div class="entrada">
+            <label for="usuario">Usuario:</label>
+            <input
+               type="text"
+               id="usuario"
+               name="usuario"
+               placeholder="Ingrese su usuario"
+               required
+            />
+            <label for="contrasena">Contraseña:</label>
+            <input
+               type="password"
+               id="contrasena"
+               name="contrasena"
+               placeholder="Ingrese su contraseña"
+               required
+            />
+         
          <div class="botones">
             <button class="inicar boton">
                iniciar Sesion
@@ -74,10 +76,8 @@ import Footer from "../components/Footer.astro";
          border-radius: 9px;
          cursor: pointer;
          display: flex;
-         
-
       }
-      
+
       .inicar.boton {
          background-color: #0f2bff; /* Verde */
          color: rgb(255, 255, 255);

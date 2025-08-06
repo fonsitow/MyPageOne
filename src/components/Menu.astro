@@ -1,5 +1,5 @@
 ---
-import Logo from "../assets/Logo.svg";
+import Logo from '../assets/logo.svg';
 import { Icon } from 'astro-icon/components'
 ---
 
@@ -7,9 +7,7 @@ import { Icon } from 'astro-icon/components'
     <nav class="menu">
         <!--logo de la pagina -->
         <div class="logo">
-            <Icon name="pixelarticons:4k" 
-            width="64" 
-            height="64" class="bg-amber-50 border-6" />
+            <img src="/logo.svg" />
         </div>
         <!--navegacion de la pagina -->
         <div class="navbar"
@@ -91,6 +89,11 @@ import { Icon } from 'astro-icon/components'
 
 #nav-list .menu-item:hover {
     opacity: 1;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
 }
 
 

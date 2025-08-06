@@ -1,10 +1,75 @@
 ---
 import Tarjeta from "../components/Tarjeta.astro";
 import Layout from "../layouts/Layout.astro";
+import Imagen from "../assets/minecraft.png";
+import Imagen2 from "../assets/minecraft dungeons.jpg";
+import Imagen3 from "../assets/minecraft legends.jpg";
+import Imagen4 from "../assets/minecraft education.jpg";
 ---
 
 <Layout>
-  <Tarjeta titulo="Tarjeta de prueba" descripcion="prueba 1" />
-  <Tarjeta titulo="Tarjeta de prueba 2" descripcion="prueba 2" />
-  <Tarjeta titulo="Tarjeta de prueba 3" descripcion="prueba 3" />
+  <h1 class="titulo">Descubre nuestros juegos</h1>
+ 
+  <a
+    href="https://www.minecraft.net/es-es/store/minecraft-dungeons-legends-bundle" class="link">Consigue los 3 juegos Minecraft con el Triple Bundle</a>
+  
+
+  <div class="juegos">
+    <Tarjeta
+      imagen={Imagen.src}
+      titulo="Minecraft Java Edition"
+      descripcion="Sandbox de supervivencia, aventura. Un solo jugador + multijugador"
+      lista={[
+        "ri:windows-fill",
+        "ri:xbox-fill",
+        "ri:playstation-fill",
+        "ri:switch-fill",
+        "ri:apple-fill",
+        "ri:android-fill",
+        "ri:chrome-fill",
+      ]}
+    />
+    <Tarjeta
+      titulo="Minecraft Dungeons"
+      descripcion="Exploración de mazmorras, RPG de acción. Un solo jugador + multijugador"
+      imagen={Imagen2.src}
+      lista={[
+        "ri:windows-fill",
+        "ri:xbox-fill",
+        "ri:playstation-fill",
+        "ri:switch-fill",
+      ]}
+    />
+    <Tarjeta
+      titulo="Minecraft Legends"
+      descripcion="RPG de acción, estrategia. Un solo jugador + multijugador"
+      imagen={Imagen3.src}
+      lista={[
+        "ri:windows-fill",
+        "ri:xbox-fill",
+        "ri:playstation-fill",
+        "ri:switch-fill",
+      ]}
+    />
+    <Tarjeta
+      titulo="Minecraft Education Edition"
+      descripcion="Educación, sandbox de supervivencia, aventura. Un solo jugador + multijugador"
+      imagen={Imagen4.src}
+      lista={[
+        "ri:windows-fill",
+        "ri:apple-fill",
+        "ri:chrome-fill",
+        "ri:android-fill",
+      ]}
+    />
+  </div>
 </Layout>
+
+<style>
+  .juegos {
+    display: flex;
+    gap: 16px;
+    padding: 64px;
+    
+  }
+</style>
