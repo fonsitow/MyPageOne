@@ -13,23 +13,19 @@ import Footer from "../components/Footer.astro";
       </header>
 
       <main>
-         <form class="container">
+         <div class="container">
             <div class="entrada">
                <label for="usuario">Usuario:</label>
                <input
                   type="text"
                   id="usuario"
                   name="usuario"
-                  placeholder="Ingrese su usuario"
-                  required
                />
                <label for="contrasena">Contraseña:</label>
                <input
                   type="password"
                   id="contrasena"
                   name="contrasena"
-                  placeholder="Ingrese su contraseña"
-                  required
                />
             </div>
             <div class="botones">
@@ -39,7 +35,7 @@ import Footer from "../components/Footer.astro";
                </button>
                <a href="/"> <button class="volver boton"> volver </button> </a>
             </div>
-         </form>
+         </div>
 
       </main>
 
@@ -71,6 +67,7 @@ import Footer from "../components/Footer.astro";
          justify-content: center;
          align-items: center;
          display: flex;
+         padding: 15px 20px;
          
       }
       .inicio {
@@ -119,6 +116,11 @@ import Footer from "../components/Footer.astro";
       }
       input {
          width: 500px;
+         border-width: 1px;
+         border-style: solid;
+         background: #3854f34a;
+      
       }
+      
    </style>
 </body>

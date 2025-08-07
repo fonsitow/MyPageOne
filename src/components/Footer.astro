@@ -1,30 +1,41 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
 <footer>
-			
-			<p>
-				creditos a mi papá por patrocinarme el curso
-			</p>
-            <ul>	
-				<li>
-					<a href="#"> Regresar al inicio </a>
-                </li>
-				<li>
-					contactos
-				</li>
-			</ul>
-		</footer>
+  <div class="footer2">
+    <ul>
+      <li>Privacidad y cookies</li>
+      <li>Términos de uso</li>
+      <li>Marcas comerciales</li>
+      <li>Acerca de nuestros anuncios</li>
+      <li>© 2025 Microsoft</li>
+    </ul>
+    <a class="icon"><Icon name="ri:microsoft-fill" width="28" height="28" /></a>
+  </div>
+</footer>
 
 <style>
-	footer {
-		background-color: #000000;
-		color: rgb(255, 255, 255);
-		padding: 50px;
-		text-align: center;
-		align-items: end;
-	}
-	footer ul {
-		list-style-type: none;
-		padding: 0;
-	}
-	footer ul li {
-		display: inline;
-	}
+  footer {
+    background-color: #0000006b;
+    color: rgb(255, 255, 255);
+    padding: 32px;
+    text-align: center;
+    align-items: end;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+  }
+  .footer2 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 350px;
+  }
+</style>
